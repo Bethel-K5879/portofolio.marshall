@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-marshall-node",
+  "version": "2.0.0",
+  "description": "Portfolio de NIANGORAN Yeffe Marshall Edgard – serveur Node.js sans dépendance qui sert le site React (dossier public/)",
+  "private": true,
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "messages": "node scripts/messages.js",
+    "build:site": "npm --prefix frontend install && npm --prefix frontend run build && node scripts/copy-site.js"
+  }
+}
